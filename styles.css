@@ -1,6 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
+    width: 100%;
 }
 
 h1 {
@@ -12,15 +13,27 @@ h1 {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     gap: 20px;
     padding: 20px;
+    justify-content: center; /* Center the grid items */
 }
 
 .book {
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+    width: 150px; /* Adjust this value for the size of your book container */
 }
 
 .book img {
     width: 100%;
     height: auto;
+    max-width: 150px; /* Adjust this value as needed */
+    max-height: 200px; /* Adjust this value as needed */
+    object-fit: cover; /* Ensures that the image scales properly */
+    border-radius: 5px; /* Optional: Adds a slight curve to the image */
 }
 
 #pdf-viewer {

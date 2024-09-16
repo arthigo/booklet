@@ -3,22 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PDF Book Library</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/epub.js/0.3.88/epub.min.js"></script>
+    <title>Booklet</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.5/jszip.min.js"></script>
+    <!--script src="https://cdnjs.cloudflare.com/ajax/libs/epub.js/0.3.88/epub.min.js"></script-->
+    <!--script src="https://cdnjs.cloudflare.com/ajax/libs/epub.js/0.3.88/epub.min.js"></script-->
+    
     <link rel="stylesheet" href="styles.css">    
 </head>
 <body>
-    <h1>My PDF Book Library</h1>
-    <div class="book-grid">
-        <!-- <div class="book" data-file="pdfs/Sword_Oratoria_6.epub">
-            <img src="covers/Sword_Oratoria_6.jpg" alt="Sword Oratoria 6">
-            <h2 class="book-title"></h2>
-        </div> -->
-        <!-- <div class="book" data-file="pdfs/Sword Oratoria 6.pdf">
-            <img src="covers/Sword Oratoria 6.jpg" alt="Sword Oratoria 6">
-            <h2 class="book-title"></h2> -->
+    <h1>Booklet</h1>
+    <div class="book-grid">      
 
-        <div class="book" data-file="pdfs/Sword Oratoria 7.pdf">
+        <div class="book" data-file="pdfs/Sword Oratoria 7.epub">
             <img src="covers/Sword Oratoria 7.jpg" alt="Sword Oratoria 7">
             <h2 class="book-title"></h2>
 
@@ -26,14 +22,21 @@
             <img src="covers/default.jpg" alt="conectivos 3.0">
             <h2 class="book-title"></h2>
         </div>
-        <!-- Add more books here -->
+
+        <div class="book" data-file="pdfs/O Rei do Inverno.pdf">
+            <img src="covers/O Rei do Inverno.jpg" alt="O rei do Inverno">
+            <h2 class="book-title"></h2>
+        </div>
+
+
+        <!-- Add more books above -->
     </div>
     
-    <!-- Add a viewer container for EPUB -->
+    <!-- Add a viewer container for EPUB >
     <div id="epub-viewer" style="display: none;">
         <button id="close-epub">Close EPUB</button>
         <div id="epub-container"></div>
-    </div>
+    </div-->
     
     <div id="pdf-viewer">
         <button id="close-pdf">Close PDF</button>
